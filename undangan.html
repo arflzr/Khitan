@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undangan Khitanan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="music" autoplay loop>
+    <source src="ROBBI FAJAALNA    - VARIOUS ARTIST.mp3" type="audio/mp3">
+  </audio>
+
+  <div class="background"></div>
+
+  <div class="container">
+    <h2 class="title">Walimatul Khitan</h2>
+
+    <div class="image">
+      <img src="maki.png" alt="Foto Anak">
+    </div>
+
+    <div class="child-info">
+      <h3>KHITANAN</h3>
+      <p><strong>MUHAMMAD MAKKY NURUDDIN AL-GHIFARI</strong></p>
+      <p>Putra pertama kami <br><strong> Ceng M. Alfi Daril Ghifari & Teh Wafi Nurfadilah</strong></p>
+    </div>
+
+    <p class="quote">
+      "Peristiwa penting dalam perjalanan hidup lelaki muslim adalah menjelang akil baligh, saat manis dalam kenangan sejarah panjang seorang muslim adalah untuk pertama dan cuma sekali ketika ia dikhitan. Ya Allah perkenankan kami mengkhitankan putra kami."
+    </p>
+
+    <div class="countdown" id="countdown">
+      <div><span id="days">0</span><small>Hari</small></div>
+      <div><span id="hours">0</span><small>Jam</small></div>
+      <div><span id="minutes">0</span><small>Menit</small></div>
+      <div><span id="seconds">0</span><small>Detik</small></div>
+    </div>
+
+    <button onclick="addToCalendar()">Save To Calendar</button>
+
+    <h3 class="section-title">Galeri</h3>
+    <div class="gallery">
+      <img src="WhatsApp Image 2025-07-04 at 22.02.49_06bba181.jpg">
+      <img src="WhatsApp Image 2025-07-04 at 22.32.30_ac6f64a9.jpg">
+      <img src="WhatsApp Image 2025-07-04 at 22.02.50_36c4fefa.jpg">
+    </div>
+
+    <h3 class="section-title">Lokasi Acara</h3>
+    <div class="map">
+      <iframe src="https://maps.app.goo.gl/WCTvroQ6bBAQuDLw6" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <h3 class="section-title">Ucapan & Doa</h3>
+    <form onsubmit="addUcapan(event)">
+      <input type="text" id="nama" placeholder="Nama Anda" required>
+      <textarea id="ucapan" placeholder="Ucapan atau doa" required></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+    <div id="daftarUcapan"></div>
+
+    <div class="whatsapp">
+      <a href="https://wa.me/+6285720602133" target="_blank">Mau Dibuatkan? Ada Kendala?</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

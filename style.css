@@ -1,0 +1,138 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #333;
+  text-align: center;
+}
+
+.background {
+  background: url('Hijau Krem Ilustrasi Bunga Undangan Pernikahan Video Seluler.gif') repeat;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.1;
+  z-index: -1;
+  animation: movebg 60s linear infinite;
+}
+
+@keyframes movebg {
+  0% { background-position: 0 0; }
+  100% { background-position: 1000px 1000px; }
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.title {
+  font-size: 2em;
+  color: #b27d58;
+  margin-bottom: 10px;
+}
+
+.image img {
+  width: 200px;
+  border-radius: 50%;
+  margin: 10px 0;
+}
+
+.child-info {
+  margin: 10px 0;
+  color: #5c3a1d;
+}
+
+.quote {
+  font-style: italic;
+  margin: 15px;
+  font-size: 1em;
+}
+
+.countdown {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+.countdown div {
+  background: #f3e5ab;
+  padding: 10px;
+  border-radius: 8px;
+}
+.countdown span {
+  font-size: 1.5em;
+  display: block;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px 0;
+  background: #c58940;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover {
+  background: #a56c27;
+}
+
+.section-title {
+  margin-top: 30px;
+  color: #8b5e3c;
+}
+
+.gallery {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gallery img {
+  width: 30%;
+  border-radius: 10px;
+}
+
+.map iframe {
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+form {
+  margin: 20px 0;
+}
+form input, form textarea {
+  width: 90%;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+#daftarUcapan {
+  text-align: left;
+  padding: 10px;
+}
+.ucapan-item {
+  background: #fdf7e9;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 6px;
+}
+
+.whatsapp {
+  margin-top: 20px;
+}
+.whatsapp a {
+  background: #25d366;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  display: inline-block;
+}
